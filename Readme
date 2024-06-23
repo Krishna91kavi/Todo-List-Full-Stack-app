@@ -1,0 +1,69 @@
+Todo List Full Stack Application
+
+This is a Todo List application developed using Django and React. It allows users to manage their tasks with features for creating, updating, completing, and deleting tasks.
+
+
+Technologies Used
+
+Backend: Django REST Framework
+Frontend: React
+Database: SQLite (Django's default for development)
+Api Testing: Postman
+
+
+Features
+
+Create Task: Users can add new tasks with a title, description, and due date.
+Update Task: Tasks can be edited to change the title, description, completion status, or due date.
+Complete Task: Tasks can be marked as completed, which strikes through the task title.
+Delete Task: Users can remove tasks they no longer need.
+Pagination: Tasks are paginated on the frontend to improve loading times and user experience.
+
+
+Backend Setup
+
+Install Dependencies: Navigate to the backend directory and install Python dependencies:
+pip install -r requirements.txt
+
+Run Migrations: Apply database migrations to create the necessary tables:
+python manage.py migrate
+
+Run Server: Start the Django development server:
+python manage.py runserver
+
+The backend server will run at http://localhost:8000/admin
+
+
+Frontend Setup
+
+Install Dependencies: Navigate to the frontend directory and install npm dependencies:
+npm install
+
+Run Development Server: Start the React development server:
+npm start
+The frontend development server will run at http://localhost:3000.
+
+Build Production: To build the production-ready frontend files:
+npm run build
+
+
+API Endpoints
+GET /api/todos/: Retrieve paginated list of all todos.
+POST /api/todos/: Create a new todo.
+GET /api/todos/
+/: Retrieve details of a specific todo.
+PUT /api/todos/
+/: Update details of a specific todo.
+DELETE /api/todos/
+/: Delete a specific todo.
+
+
+Notes:
+Update the backend/requirements.txt and frontend/package.json files with the actual dependencies used in your project.
+Replace username in the Author section with your GitHub username.
+Add screenshots or additional sections as per your project's specific features and requirements.
+This README provides an overview of the Todo List application, setup instructions for both backend and frontend, API endpoints, and other relevant details to help users understand and use the application effectively. Adjust the content and structure based on your project's specifics and any additional information you want to include.
+
+Project By Krishna Kumar 
+
+
